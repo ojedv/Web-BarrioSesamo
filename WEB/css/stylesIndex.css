@@ -1,15 +1,15 @@
 :root {
-  --color-bg: #fef7e0;
+  --color-bg: #f1d595;
   --color-text: #000000;
-  --color-navbar: #0d6efd;
-  --color-footer: #0d6efd;
+  --color-navbar: #bb482e;
+  --color-footer: #bb482e;
 }
 
 body.dark-mode {
-  --color-bg: #1e1e1e;
+  --color-bg: #4e4e4e;
   --color-text: #f1f1f1;
-  --color-navbar: #333333;
-  --color-footer: #333333;
+  --color-navbar: #1553b0;
+  --color-footer: #1553b0;
 }
 
 body {
@@ -51,6 +51,9 @@ footer {
 
 .floating-img {
   animation: float 4s ease-in-out infinite;
+  width: 230px;
+  height: 200px;
+  border-radius: 50px;
 }
 
 /* Lluvia de galletas */
