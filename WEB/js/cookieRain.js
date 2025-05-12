@@ -1,7 +1,7 @@
 function startCookieRain() {
   setInterval(() => {
     const cookie = document.createElement("img");
-    cookie.src = "img/cursor/cookie.png"; 
+    cookie.src = "img/Fondos/cookie.png"; 
     cookie.classList.add("cookie-rain");
 
     const size = Math.random() * 20 + 30; // Tamaño entre 30 y 50px
