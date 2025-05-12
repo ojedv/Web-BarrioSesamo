@@ -1,0 +1,75 @@
+:root {
+  --color-bg: #fef7e0;
+  --color-text: #000000;
+  --color-navbar: #0d6efd;
+  --color-footer: #0d6efd;
+}
+
+body.dark-mode {
+  --color-bg: #1e1e1e;
+  --color-text: #f1f1f1;
+  --color-navbar: #333333;
+  --color-footer: #333333;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: url("img/cursor/cookie.png") 16 16, auto;
+}
+
+.navbar {
+  background-color: var(--color-navbar) !important;
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: #fff;
+}
+
+.hero-section {
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.feature-icon {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Animación flotante para imágenes */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-img {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Lluvia de galletas */
+.cookie-rain {
+  position: fixed;
+  top: -100px;
+  width: 40px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}

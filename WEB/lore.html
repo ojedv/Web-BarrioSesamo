@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lore - Sesame Cookies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesLore.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+        Sesame Cookies
+      </a>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas" aria-controls="menuCanvas">☰</button>
+        <button id="darkModeToggle" class="btn btn-outline-light" title="Cambiar modo">
+          <span id="darkModeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OFFCANVAS MENU -->
+  <div class="offcanvas offcanvas-end bg-light text-dark" tabindex="-1" id="menuCanvas" aria-labelledby="menuCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuCanvasLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="lore.html">Lore</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTENIDO LORE -->
+  <main class="lore-container">
+    <section class="lore-section">
+      <h1>Érase una vez en la Avenida Sésamo...</h1>
+      <p>Una serie mágica que marcó generaciones, llena de personajes coloridos y enseñanzas para la vida.</p>
+    </section>
+
+    <section class="lore-section">
+      <img src="img/lore-elmo.png" alt="Elmo" class="lore-image">
+      <p>Elmo, el eterno curioso. Su risa, su energía y su color lo convierten en un ícono inolvidable.</p>
+    </section>
+
+    <section class="lore-section">
+      <img src="img/lore-cookie.png" alt="Cookie Monster" class="lore-image">
+      <p>El Monstruo de las Galletas no solo ama las galletas: representa la pasión, el deseo y el impulso infantil puro.</p>
+    </section>
+
+    <section class="lore-section">
+      <p>Oscar, Big Bird y el resto del barrio también tienen su historia. Juntos, nos enseñaron empatía, amistad y respeto.</p>
+    </section>
+
+    <section class="lore-section">
+      <h2>¿Y si las galletas cobraran vida?</h2>
+      <p>Así nació nuestra tienda. Un homenaje comestible a todo lo que representa Barrio Sésamo.</p>
+      <img src="img/lore-shop.png" alt="Tienda" class="lore-image">
+    </section>
+  </main>
+
+  <!-- BOTÓN FLOTANTE -->
+  <a href="index.html" class="btn btn-warning position-fixed bottom-0 end-0 m-4 shadow-lg rounded-pill px-4 py-2" style="z-index: 1050;">
+    🍪 Ir al Inicio
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center py-3">
+    <p class="mb-0">© 2025 Sesame Cookies | Hecho con 🍪 y cariño</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/loreEffects.js"></script>
+</body>
+</html>
