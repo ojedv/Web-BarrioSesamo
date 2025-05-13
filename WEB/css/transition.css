@@ -1,0 +1,19 @@
+/* transition.css */
+.transition-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/Fondos/cookie.png") center center no-repeat;
+  background-size: 100px;
+  background-color: #fef7e0;
+  z-index: 9999;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.transition-screen.show {
+  transform: scale(30);
+}
