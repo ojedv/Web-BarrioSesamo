@@ -16,6 +16,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   padding-top: 70px;
+  margin-top: 80px;
   font-family: 'Segoe UI', sans-serif;
   transition: background-color 0.3s, color 0.3s;
   cursor: url("../img/cursor/cookie.png") 16 16, auto; /* Cambia el cursor a una imagen personalizada */

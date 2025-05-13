@@ -3,13 +3,19 @@
   --color-text: #000000;
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
-  --color-footer-opacity: rgba(187, 72, 46, 0.8); /}
+  --color-footer-opacity: rgba(187, 72, 46, 0.6); 
+  --color-borde-boton: #000000;
+}
 
 body.dark-mode {
   --color-bg: #000000;
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
+  --color-footer-opacity: rgba(21, 83, 176, 0.6);
+  --color-borde-boton: #ffffff;
+ 
+
 }
 
 body {
@@ -71,19 +77,44 @@ footer {
   margin-right: 30px;
 }
 .btn{ /* Cambia el color del borde del boton de inicio */
-  outline: 2px solid var(--color-text);
+  outline: 0px solid var(--color-text);
+  border: 3px solid var(--color-text);
   color: var(--color-text);
 }
-.btn:hover{
+.btn:hover{ /* Cambia el color del boton +infos */
   background-color: var(--color-footer);
   color: var(--color-text);
 
 }
 .card{
-  outline: 2px solid var(--color-text); /* Cambia el color del borde de las cards */
+  outline: 3px solid var(--color-text); /* Cambia el color del borde de las cards */
+  min-width: 580px;
 }
 .card-img{ /* Son las imagenes de las cards */
   width: 250px;
   height: auto; 
   object-fit: cover;
 }
+main.container {
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+}
+.card .btn{ /* Cambia borde de los botones dentro de las tarjetas */
+  border-radius: 30px;
+  outline: 0px solid var(--color-text);
+  border: 3px solid var(--color-text);
+}
+
+.btn-compra:hover{ /* Cambia el color del borde del boton de compra */
+  outline: 3px solid var(--color-borde-boton);
+  border: 3px solid var(--color-footer);
+}
+.row{ /*Pone un pequeño margen abajo del todo*/
+  margin-bottom: 30px;
+}
+.titulo-tienda{ /* Cambia el color del texto al titulo de la tienda */
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
+
