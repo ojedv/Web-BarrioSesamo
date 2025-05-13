@@ -87,3 +87,8 @@ footer {
   height: auto; 
   object-fit: cover;
 }
+main.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
