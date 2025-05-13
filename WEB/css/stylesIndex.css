@@ -1,12 +1,12 @@
-:root {
-  --color-bg: #f1d595;
-  --color-text: #000000;
+:root {  /* Definición de variables CSS para el modo claro */
+  --color-bg: #ebebeb;
+  --color-text: #3f3f3f;
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
 }
 
-body.dark-mode {
-  --color-bg: #000000;
+body.dark-mode { /* Definición de variables CSS para el modo oscuro */
+  --color-bg: #3f3f3f;
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
@@ -18,7 +18,7 @@ body {
   padding-top: 70px;
   font-family: 'Segoe UI', sans-serif;
   transition: background-color 0.3s, color 0.3s;
-  cursor: url("../img/cursor/cookie.png") 16 16, auto;
+  cursor: url("../img/cursor/cookie.png") 16 16, auto; /* Cambia el cursor a una imagen personalizada */
 }
 
 .navbar {
@@ -28,12 +28,15 @@ body {
 footer {
   background-color: var(--color-footer);
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .hero-section {
   
   background-size: cover;
-  background-position: c  height: 90vh;
 }
 
 .feature-icon {

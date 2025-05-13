@@ -1,9 +1,9 @@
 :root {
-  --color-bg: #f1d595;
+  --color-bg: #ebebeb;
   --color-text: #000000;
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
-}
+  --color-footer-opacity: rgba(187, 72, 46, 0.8); /}
 
 body.dark-mode {
   --color-bg: #000000;
@@ -26,6 +26,11 @@ body {
 
 footer {
   background-color: var(--color-footer);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .card {
@@ -58,4 +63,27 @@ footer {
 }
 .offcanvas-title{
   font-size: 30px;
+}
+.btn-warning{
+  background-color: var(--color-footer);
+  color:var(--color-);
+  margin-bottom: 80px;
+  margin-right: 30px;
+}
+.btn{ /* Cambia el color del borde del boton de inicio */
+  outline: 2px solid var(--color-text);
+  color: var(--color-text);
+}
+.btn:hover{
+  background-color: var(--color-footer);
+  color: var(--color-text);
+
+}
+.card{
+  outline: 2px solid var(--color-text); /* Cambia el color del borde de las cards */
+}
+.card-img{ /* Son las imagenes de las cards */
+  width: 250px;
+  height: auto; 
+  object-fit: cover;
 }
