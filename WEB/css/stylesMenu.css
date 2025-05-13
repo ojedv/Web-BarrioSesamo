@@ -71,7 +71,8 @@ footer {
   margin-right: 30px;
 }
 .btn{ /* Cambia el color del borde del boton de inicio */
-  outline: 2px solid var(--color-text);
+  outline: 0px solid var(--color-text);
+  border: 3px solid var(--color-text);
   color: var(--color-text);
 }
 .btn:hover{
@@ -92,3 +93,9 @@ main.container {
   justify-content: center;
   flex-direction: column;
 }
+.card .btn{ /* Cambia borde de los botones dentro de las tarjetas */
+  border-radius: 30px;
+  outline: 0px solid var(--color-text);
+  border: 3px solid var(--color-text);
+}
+
