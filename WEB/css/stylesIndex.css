@@ -18,7 +18,7 @@ body {
   padding-top: 70px;
   font-family: 'Segoe UI', sans-serif;
   transition: background-color 0.3s, color 0.3s;
-  cursor: url("img/cursor/cookie.png") 16 16, auto;
+  cursor: url("../img/cursor/cookie.png") 16 16, auto;
 }
 
 .navbar {
