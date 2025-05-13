@@ -6,7 +6,7 @@
 }
 
 body.dark-mode {
-  --color-bg: #4e4e4e;
+  --color-bg: #000000;
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
