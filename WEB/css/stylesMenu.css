@@ -5,6 +5,7 @@
   --color-footer: #bb482e;
   --color-footer-opacity: rgba(187, 72, 46, 0.6); 
   --color-borde-boton: #000000;
+  --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
 }
 
 body.dark-mode {
@@ -14,6 +15,7 @@ body.dark-mode {
   --color-footer: #1553b0;
   --color-footer-opacity: rgba(21, 83, 176, 0.6);
   --color-borde-boton: #ffffff;
+ 
 
 }
 
@@ -107,7 +109,7 @@ main.container {
 
 .btn-compra:hover{ /* Cambia el color del borde del boton de compra */
   outline: 3px solid var(--color-borde-boton);
-  border: 3px solid var(--color-footer);
+  border: 3px solid var(--color-borde-boton);
 }
 .row{ /*Pone un pequeño margen abajo del todo*/
   margin-bottom: 30px;
@@ -115,5 +117,21 @@ main.container {
 .titulo-tienda{ /* Cambia el color del texto al titulo de la tienda */
   font-family: 'Lobster', cursive;
   font-size: 35px;
+}
+nav .btn{
+  color: var(--color-text);
+  border: 3px solid #ffffff;
+  background-color:var(--color-footer);
+}
+
+nav .btn:hover{
+  background-color:var(--color-blanco-opacidad);
+}
+.btn-inicio{
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-inicio:hover{
+  outline: 3px solid var(--color-text);
 }
 
