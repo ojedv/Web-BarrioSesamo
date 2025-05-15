@@ -84,3 +84,7 @@ footer {
   color: #fff;
   transition: background-color 0.3s;
 }
+.titulo-tienda{
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}

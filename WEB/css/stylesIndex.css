@@ -4,7 +4,7 @@
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
   --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
-  --color-fondo-tarjeta-opacidad: rgba(255, 255, 255, 0.9);
+  --color-fondo-tarjeta-opacidad: rgba(164, 0, 0, 0.6);
   --fondo-pantalla: url("../img/Fondo-MountruoRojo.png");
 }
 
@@ -13,7 +13,7 @@ body.dark-mode { /* Definición de variables CSS para el modo oscuro */
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
-  --color-fondo-tarjeta-opacidad: rgba(1, 0, 0, 0.7);
+  --color-fondo-tarjeta-opacidad: rgba(0, 27, 134, 0.6);
   --fondo-pantalla: url("../img/Fondo-MountruoAzul.png");
 
 
