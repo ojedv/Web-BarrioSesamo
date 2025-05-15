@@ -29,6 +29,10 @@ body {
 footer {
   background-color: var(--color-footer);
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .card {
