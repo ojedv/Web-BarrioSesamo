@@ -25,6 +25,10 @@ body {
 .navbar {
   background-color: var(--color-navbar) !important;
 }
+.titulo-tienda{
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
 
 footer {
   background-color: var(--color-footer);
