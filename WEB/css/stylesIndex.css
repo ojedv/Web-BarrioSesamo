@@ -3,6 +3,9 @@
   --color-text: #3f3f3f;
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
+  --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
+  --color-fondo-tarjeta-opacidad: rgba(255, 255, 255, 0.9);
+  --fondo-pantalla: url("../img/Fondo-MountruoRojo.png");
 }
 
 body.dark-mode { /* Definición de variables CSS para el modo oscuro */
@@ -10,10 +13,14 @@ body.dark-mode { /* Definición de variables CSS para el modo oscuro */
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
+  --color-fondo-tarjeta-opacidad: rgba(1, 0, 0, 0.7);
+  --fondo-pantalla: url("../img/Fondo-MountruoAzul.png");
+
+
 }
 
 body {
-  background-color: var(--color-bg);
+  background: var(--fondo-pantalla) no-repeat center center fixed;
   color: var(--color-text);
   padding-top: 70px;
   margin-top: 80px;
@@ -91,4 +98,9 @@ footer {
 }
 .offcanvas-title{
   font-size: 30px;
+}
+.fondo-claro{
+  background-color:var(--color-fondo-tarjeta-opacidad);
+  padding: 30px;
+  border-radius:20px;
 }
