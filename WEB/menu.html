@@ -13,6 +13,9 @@
 </head>
 <body>
   <div id="transitionScreen" class="transition-screen"></div>
+
+
+
   <nav class="navbar navbar-dark fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -24,7 +27,8 @@
   <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas" aria-controls="menuCanvas">☰</button>
 
   <!-- Ícono de carrito -->
-  <button id="cartButton" class="btn btn-outline-light me-2" title="Ver carrito">
+  <button id="cartButton" class="btn btn-outline-light me-2" onclick="location.href='carritoCompra.html'">
+
     🛒 <span id="cartCount" class="badge bg-warning text-dark ms-1">0</span>
   </button>
 
@@ -55,6 +59,8 @@
   <main class="container py-5 mt-5">
     <h1 class="text-center mb-4">🍪 Nuestro Menú de Galletas</h1>
     <div class="row gy-4">
+
+      
       <!-- Galleta Elmo -->
       <div class="col-12 col-sm-12 col-md-12 col-xxl-6">
         <div class="card flex-row shadow-sm">
@@ -63,7 +69,7 @@
             <h5 class="card-title">Galleta Elmo</h5>
             <p class="card-text">Galleta de fresa con chispas rojas, tan dulce como el propio Elmo.</p>
             <p><strong>Precio:</strong> 2,50 €</p>
-            <button class="btn btn-compra btn-warning me-2 my-sm-3">🛒 Añadir a la cesta</button>
+            <button class="btn btn-compra btn-warning me-2 my-sm-3" onclick="agregarAlCarrito('elmo')">🛒 Añadir a la cesta</button>
             <button class="btn" data-bs-toggle="modal" data-bs-target="#modalElmo">ℹ️ Más información</button>
           </div>
         </div>
