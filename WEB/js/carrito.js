@@ -1,9 +1,10 @@
+// carrito.js
 
 const productos = {
-  elmo: { nombre: "Galleta Elmo", precio: 2.5, imagen: "/img/cookies/Elmo-cookie.png" },
-  monstruo: { nombre: "Galleta Monstruo", precio: 2.8, imagen: "/img/cookies/Mountruo-cookie.png" },
-  oscar: { nombre: "Galleta Oscar", precio: 2.6, imagen: "/img/cookies/Oscar-cookie.png" },
-  bigbird: { nombre: "Galleta Big Bird", precio: 2.4, imagen: "/img/cookies/Pajaroto-cookie.png" }
+  elmo: { nombre: "Galleta Elmo", precio: 2.5, imagen: "img/galleta-elmo.png" },
+  monstruo: { nombre: "Galleta Monstruo", precio: 2.8, imagen: "img/galleta-monstruo.png" },
+  oscar: { nombre: "Galleta Oscar", precio: 2.6, imagen: "img/galleta-oscar.png" },
+  bigbird: { nombre: "Galleta Big Bird", precio: 2.4, imagen: "img/galleta-bigbird.png" }
 };
 
 function obtenerCarrito() {
@@ -19,6 +20,17 @@ function agregarAlCarrito(id) {
   carrito[id] = (carrito[id] || 0) + 1;
   guardarCarrito(carrito);
   actualizarContador();
+}
+
+function quitarDelCarrito(id) {
+  const carrito = obtenerCarrito();
+  if (carrito[id]) {
+    carrito[id]--;
+    if (carrito[id] <= 0) delete carrito[id];
+    guardarCarrito(carrito);
+    actualizarContador();
+    mostrarCarrito();
+  }
 }
 
 function actualizarContador() {
@@ -46,13 +58,16 @@ function mostrarCarrito() {
     const col = document.createElement("div");
     col.className = "col-12";
     col.innerHTML = `
-      <div class="card p-3 d-flex flex-row align-items-center">
-        <img src="${item.imagen}" alt="${item.nombre}" width="80" class="me-3">
-        <div class="flex-grow-1">
-          <h5>${item.nombre}</h5>
-          <p class="mb-1">Cantidad: ${cantidad}</p>
-          <p class="mb-0">Subtotal: ${subtotal.toFixed(2)} €</p>
+      <div class="card p-3 d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="${item.imagen}" alt="${item.nombre}" width="80" class="me-3">
+          <div>
+            <h5>${item.nombre}</h5>
+            <p class="mb-1">Cantidad: ${cantidad}</p>
+            <p class="mb-0">Subtotal: ${subtotal.toFixed(2)} €</p>
+          </div>
         </div>
+        <button class="btn btn-danger" onclick="quitarDelCarrito('${id}')">🗑 Quitar</button>
       </div>
     `;
     contenedor.appendChild(col);
@@ -61,11 +76,10 @@ function mostrarCarrito() {
   if (totalSpan) totalSpan.textContent = `${total.toFixed(2)} €`;
 }
 
-// Iniciar al cargar la página del carrito
 if (window.location.pathname.includes("carritoCompra")) {
   document.addEventListener("DOMContentLoaded", mostrarCarrito);
 }
 
-// Exponer función para usarla desde el menú
 window.agregarAlCarrito = agregarAlCarrito;
 window.actualizarContador = actualizarContador;
+window.quitarDelCarrito = quitarDelCarrito;
