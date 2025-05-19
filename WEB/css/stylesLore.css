@@ -16,6 +16,7 @@ body.dark-mode {
   --color-footer: #1553b0;
 }
 
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -83,15 +84,45 @@ body {
   transform: scale(1);
 }
 
+/* .offcanvas es el Menu desplegable del nav */
+
+.offcanvas-body{
+  font-size: 25px;
+}
+.offcanvas-body li :hover{
+  background-color:#c9c8c8;
+}
+.offcanvas-title{
+  font-size: 30px;
+}
+
 footer {
-  background-color: var(--accent-color);
+  background-color: var(--color-footer);
   color: #fff;
   transition: background-color 0.3s;
 }
+
+/* Hacemos titulo mas grande y cambiamos el estilo de la letra */
 .titulo-tienda{
   font-family: 'Lobster', cursive;
   font-size: 35px;
 }
+/* Cambia la letra */
 .letraCookie{
   font-family: 'Lobster', cursive;
+}
+.fondonav{
+  background-color: var(--color-navbar);
+}
+
+/* Boton de abajo derecha de todas las paginas menos inicio, que te lleva al inicio */
+.btn-inicio{
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 90px;
+  margin-right: 30px;
+  color: var(--color-text);
+}
+.btn-inicio:hover{
+  outline: 3px solid var(--color-text);
 }

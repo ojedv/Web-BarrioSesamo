@@ -56,6 +56,18 @@ footer {
   color: #000;
 }
 
+/* .offcanvas es el Menu desplegable del nav */
+
+.offcanvas-body{
+  font-size: 25px;
+}
+.offcanvas-body li :hover{
+  background-color:#c9c8c8;
+}
+.offcanvas-title{
+  font-size: 30px;
+}
+
 #carrito-total {
   font-weight: bold;
   font-size: 1.3rem;
@@ -67,6 +79,9 @@ footer {
     text-align: center;
   }
 }
+
+/* Cambia la letra */
+
 .letraCookie{
   font-family: 'Lobster', cursive;
 }
