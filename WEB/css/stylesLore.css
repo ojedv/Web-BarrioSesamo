@@ -92,3 +92,7 @@ footer {
   left: 0;
   width: 100%;
 }
+.titulo-tienda{
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
