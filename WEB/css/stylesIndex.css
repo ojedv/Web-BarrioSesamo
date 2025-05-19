@@ -6,6 +6,7 @@
   --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
   --color-fondo-tarjeta-opacidad: rgba(164, 0, 0, 0.8);
   --fondo-pantalla: url("../img/Fondo-MountruoRojo.png");
+
 }
 
 body.dark-mode { /* Definición de variables CSS para el modo oscuro */
@@ -13,8 +14,9 @@ body.dark-mode { /* Definición de variables CSS para el modo oscuro */
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
-  --color-fondo-tarjeta-opacidad: rgba(0, 27, 134, 0.8);
+  --color-fondo-tarjeta-opacidad: rgba(0, 35, 139, 0.8);
   --fondo-pantalla: url("../img/Fondo-MountruoAzul.png");
+
 
 
 }
@@ -35,6 +37,9 @@ body {
 .titulo-tienda{
   font-family: 'Lobster', cursive;
   font-size: 35px;
+}
+.letraCookie{
+  font-family: 'Lobster', cursive;
 }
 
 footer {

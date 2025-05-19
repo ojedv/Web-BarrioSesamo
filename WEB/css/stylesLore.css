@@ -1,15 +1,19 @@
 :root {
-  --color-bg: #fffbe9;
-  --color-text: #333;
   --accent-color: #fbbc05;
   --highlight-color: #ff6f61;
+  --color-bg: #fdf5e3;
+  --color-text: #3f3f3f;
+  --color-navbar: #bb482e;
+  --color-footer: #bb482e;
 }
 
 body.dark-mode {
-  --color-bg: #1e1e1e;
-  --color-text: #f1f1f1;
   --accent-color: #ffc107;
   --highlight-color: #ff8c66;
+  --color-bg: #3f3f3f;
+  --color-text: #f1f1f1;
+  --color-navbar: #1553b0;
+  --color-footer: #1553b0;
 }
 
 body {
@@ -87,4 +91,7 @@ footer {
 .titulo-tienda{
   font-family: 'Lobster', cursive;
   font-size: 35px;
+}
+.letraCookie{
+  font-family: 'Lobster', cursive;
 }

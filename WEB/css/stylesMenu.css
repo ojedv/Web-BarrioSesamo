@@ -6,6 +6,8 @@
   --color-footer-opacity: rgba(187, 72, 46, 0.6); 
   --color-borde-boton: #000000;
   --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
+    --fondo-galletas: url("../img/Fondo-rojo.png");
+
 }
 
 body.dark-mode {
@@ -15,6 +17,8 @@ body.dark-mode {
   --color-footer: #1553b0;
   --color-footer-opacity: rgba(21, 83, 176, 0.6);
   --color-borde-boton: #ffffff;
+  --fondo-galletas: url("../img/Fondo-azul.png");
+
 
  
 
@@ -135,4 +139,6 @@ nav .btn:hover{
 .btn-inicio:hover{
   outline: 3px solid var(--color-text);
 }
-
+.letraCookie{
+  font-family: 'Lobster', cursive;
+}
