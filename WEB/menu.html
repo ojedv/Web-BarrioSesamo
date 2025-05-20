@@ -33,8 +33,7 @@
     </div>
   </nav>
 
-  <!-- Offcanvas -->
-  <div class="offcanvas offcanvas-end bg-light text-dark" id="menuCanvas">
+  <div class="offcanvas offcanvas-end bg-light text-dark" tabindex="-1" id="menuCanvas" aria-labelledby="menuCanvasLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title">Menú</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -45,7 +44,6 @@
         <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
         <li class="nav-item"><a class="nav-link" href="lore.html">Lore</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="carritoCompra.html">Carrito</a></li>
       </ul>
     </div>
   </div>
@@ -114,14 +112,77 @@
     </div>
   </main>
 
-  <!-- BOTÓN flotante -->
-  <a href="index.html" class="btn btn-warning position-fixed bottom-0 end-0 m-4 rounded-pill shadow-lg px-4 py-2" style="z-index: 1050;">
-    🍪 Volver al inicio
+  <!-- MODALES -->
+  <div class="modal fade" id="modalElmo" tabindex="-1" aria-labelledby="modalElmoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-light text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalElmoLabel">Galleta Elmo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/cookies/Elmo_cookie.jpg" class="img-fluid mb-3" alt="Galleta Elmo">
+          <p><strong>Ingredientes:</strong> Harina, azúcar, fresa natural, chispas de caramelo rojo, amor.</p>
+          <p><strong>Lore:</strong> Elmo, siempre sonriente, inspiró esta galleta con su energía inagotable y su risa contagiosa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMonstruo" tabindex="-1" aria-labelledby="modalMonstruoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-light text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMonstruoLabel">Galleta Monstruo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/cookies/CookieMonster_cookie.jpg" class="img-fluid mb-3" alt="Galleta Monstruo">
+          <p><strong>Ingredientes:</strong> Harina, azúcar moreno, trozos de chocolate, mantequilla, locura por las galletas.</p>
+          <p><strong>Lore:</strong> El Monstruo de las Galletas pidió esta receta personalmente... ¡y luego se comió 100!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalOscar" tabindex="-1" aria-labelledby="modalOscarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-light text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalOscarLabel">Galleta Oscar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/cookies/Oscar_cookie.jpg" class="img-fluid mb-3" alt="Galleta Oscar">
+          <p><strong>Ingredientes:</strong> Harina, azúcar, menta natural, colorante verde, un poco de mal genio.</p>
+          <p><strong>Lore:</strong> Oscar puede parecer gruñón, pero su galleta es tan refrescante como inesperada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalBigBird" tabindex="-1" aria-labelledby="modalBigBirdLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-light text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBigBirdLabel">Galleta Big Bird</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/galleta-bigbird.png" class="img-fluid mb-3" alt="Galleta Big Bird">
+          <p><strong>Ingredientes:</strong> Harina, azúcar, esencia de vainilla, toque de limón, ternura de Big Bird.</p>
+          <p><strong>Lore:</strong> Inspirada en la dulzura y ternura de Big Bird, esta galleta es un abrazo en forma de dulce.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- BOTÓN FLOTANTE -->
+  <a href="index.html" class="btn-inicio btn-warning position-fixed bottom-0 end-0 shadow-lg rounded-pill px-4 py-2" style="z-index: 1050;">
+    🍪 Ir al Inicio
   </a>
 
-  <!-- FOOTER -->
   <footer class="text-white text-center py-3">
-    <p class="mb-0">© 2025 The Real Cookies | Hecho con 🍪 y alegría</p>
+    <p class="mb-0">© Hecho con 🍪 y lagrimas</p>
   </footer>
 
   <!-- MODALES (puedes añadirlos aquí si no los tienes aún) -->

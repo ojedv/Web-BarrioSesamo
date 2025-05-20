@@ -13,14 +13,17 @@
 <body>
   <div id="transitionScreen" class="transition-screen"></div>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-dark fixed-top">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="img/Logo.png" alt="Logo" width="40" height="40" class="me-2">
+  <nav class="fondonav navbar navbar-dark fixed-top">
+    <div class=" container d-flex justify-content-between align-items-center">
+      <a class="titulo-tienda  navbar-brand d-flex align-items-center" href="#">
+        <img src="img/Logo.png" alt="Logo" width="60" height="60" class="me-3">
         Sésamo Cookies
       </a>
       <div class="d-flex align-items-center">
-        <button class="btn  btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas" aria-controls="menuCanvas">☰</button>
+        <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas" aria-controls="menuCanvas">☰</button>
+        <button id="cartButton" class="btn btn-outline-light me-2" title="Ver carrito">
+          🛒 <span id="cartCount" class="badge bg-warning text-dark ms-1">0</span>
+        </button>
         <button id="darkModeToggle" class="btn btn-outline-light" title="Cambiar modo">
           <span id="darkModeIcon">🌙</span>
         </button>
@@ -40,6 +43,7 @@
         <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
         <li class="nav-item"><a class="nav-link" href="lore.html">Lore</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="carritoCompra.html">Carrito Us</a></li>
       </ul>
     </div>
   </div>
@@ -73,13 +77,13 @@
   </main>
 
   <!-- BOTÓN FLOTANTE -->
-  <a href="index.html" class="btn btn-warning position-fixed bottom-0 end-0 m-4 shadow-lg rounded-pill px-4 py-2" style="z-index: 1050;">
+  <a href="index.html" class="btn-inicio btn-warning position-fixed bottom-0 end-0 shadow-lg rounded-pill px-4 py-2" style="z-index: 1050;">
     🍪 Ir al Inicio
   </a>
 
   <!-- FOOTER -->
-  <footer class="text-white text-center py-3">
-    <p class="titulo-tienda mb-0">© 2025 Sesame Cookies | Hecho con 🍪 y cariño</p>
+  <footer class="letraCookie fs-4 text-white text-center py-3">
+    <p class="mb-0">© 2025 Sesame Cookies | Hecho con 🍪 y cariño</p>
   </footer>
 
   <!-- SCRIPTS -->

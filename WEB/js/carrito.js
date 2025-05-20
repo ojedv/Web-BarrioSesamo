@@ -1,7 +1,7 @@
 // carrito.js
 
 const productos = {
-  elmo: { nombre: "Galleta Elmo", precio: 2.5, imagen: "img/galleta-elmo.png" },
+  elmo: { nombre: "Galleta Elmo", precio: 2.5, imagen: "./../img/cookies/Elmo-cookie.jpg" },
   monstruo: { nombre: "Galleta Monstruo", precio: 2.8, imagen: "img/galleta-monstruo.png" },
   oscar: { nombre: "Galleta Oscar", precio: 2.6, imagen: "img/galleta-oscar.png" },
   bigbird: { nombre: "Galleta Big Bird", precio: 2.4, imagen: "img/galleta-bigbird.png" }
