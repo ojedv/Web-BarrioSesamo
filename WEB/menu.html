@@ -50,7 +50,7 @@
 
   <!-- Contenido -->
   <main class="container py-5 mt-5">
-    <h1 class="text-center mb-4">🍪 Nuestro Menú de Galletas</h1>
+    <h1 class="fondo-contrast letraCookie titulo-menu text-center mb-4">🍪 Nuestro Menú de Galletas</h1>
     <div class="row gy-4">
 
       <!-- Producto: Elmo -->
@@ -97,6 +97,62 @@
 
       <!-- Producto: Big Bird -->
       <div class="col-12 col-xxl-6">
+        <div class="card flex-row shadow-sm">
+          <img src="img/cookies/Pajaroto_cookie.jpg" class="card-img" alt="Galleta Big Bird">
+          <div class="card-body">
+            <h5 class="card-title">Galleta Big Bird</h5>
+            <p>Vainilla amarilla con un toque suave. ¡Un abrazo en dulce!</p>
+            <p><strong>2,40 €</strong></p>
+            <button class="btn btn-compra btn-warning me-2 my-sm-3" onclick="agregarAlCarrito('bigbird')">🛒 Añadir a la cesta</button>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalBigBird">ℹ️ Más información</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Elmo -->
+      <div class="col-12 col-xxl-6">
+        <div class="card flex-row shadow-sm">
+          <img src="img/cookies/Elmo_cookie.jpg" class="card-img" alt="Galleta Elmo">
+          <div class="card-body">
+            <h5 class="card-title">Galleta Elmo</h5>
+            <p>Fresa con chispas rojas. Tan dulce como Elmo.</p>
+            <p><strong>2,50 €</strong></p>
+            <button class="btn btn-compra btn-warning me-2 my-sm-3" onclick="agregarAlCarrito('elmo')">🛒 Añadir a la cesta</button>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalElmo">ℹ️ Más información</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Monstruo -->
+      <div class="col-12 col-xxl-6">
+        <div class="card flex-row shadow-sm">
+          <img src="img/cookies/CookieMonster_cookie.jpg" class="card-img" alt="Galleta Monstruo">
+          <div class="card-body">
+            <h5 class="card-title">Galleta Monstruo</h5>
+            <p>Chocolate crujiente con trozos grandes. ¡Nom nom nom!</p>
+            <p><strong>2,80 €</strong></p>
+            <button class="btn btn-compra btn-warning me-2 my-sm-3" onclick="agregarAlCarrito('monstruo')">🛒 Añadir a la cesta</button>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalMonstruo">ℹ️ Más información</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Oscar -->
+      <div class="col-12 col-xxl-6">
+        <div class="card flex-row shadow-sm">
+          <img src="img/cookies/Oscar_cookie.jpg" class="card-img" alt="Galleta Oscar">
+          <div class="card-body">
+            <h5 class="card-title">Galleta Oscar</h5>
+            <p>Menta con cobertura verde. Malhumorada pero deliciosa.</p>
+            <p><strong>2,60 €</strong></p>
+            <button class="btn btn-compra btn-warning me-2 my-sm-3" onclick="agregarAlCarrito('oscar')">🛒 Añadir a la cesta</button>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalOscar">ℹ️ Más información</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Big Bird -->
+      <div class="row-fin col-12 col-xxl-6">
         <div class="card flex-row shadow-sm">
           <img src="img/cookies/Pajaroto_cookie.jpg" class="card-img" alt="Galleta Big Bird">
           <div class="card-body">
@@ -181,7 +237,7 @@
     🍪 Ir al Inicio
   </a>
 
-  <footer class="text-white text-center py-3">
+  <footer class="letraCookie fs-4 text-white text-center py-3">
     <p class="mb-0">© Hecho con 🍪 y lagrimas</p>
   </footer>
 

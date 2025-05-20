@@ -1,23 +1,25 @@
 :root {
   --color-bg: #ebebeb;
+  --color-bg-opacity: rgba(243, 239, 239, 0.8);/* Color usado para el fondo de las cards y el titulo */
   --color-text: #000000;
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
   --color-footer-opacity: rgba(187, 72, 46, 0.6); 
   --color-borde-boton: #000000;
   --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
-    --fondo-galletas: url("../img/Fondo-rojo.png");
+    --fondo-galletas: url("../img/fondo_rojo.png") ;
 
 }
 
 body.dark-mode {
   --color-bg: #000000;
+  --color-bg-opacity: rgba(0, 0, 0, 0.6);/* Color usado para el fondo de las cards y el titulo */
   --color-text: #f1f1f1;
   --color-navbar: #1553b0;
   --color-footer: #1553b0;
   --color-footer-opacity: rgba(21, 83, 176, 0.6);
   --color-borde-boton: #ffffff;
-  --fondo-galletas: url("../img/Fondo-azul.png");
+  --fondo-galletas: url("../img/fondo_azul.png");
 
 
  
@@ -25,7 +27,7 @@ body.dark-mode {
 }
 
 body {
-  background-color: var(--color-bg);
+  background:var(--fondo-galletas) no-repeat fixed;
   color: var(--color-text);
   padding-top: 70px;
   transition: background-color 0.3s, color 0.3s;
@@ -34,6 +36,8 @@ body {
 
 .navbar {
   background-color: var(--color-navbar) !important;
+  border-bottom: 5px solid var(--color-bg);
+
 }
 
 footer {
@@ -43,18 +47,24 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  border-top: 5px solid var(--color-bg);
 }
 
 .card {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-opacity);
   color: var(--color-text);
   transition: background-color 0.3s, color 0.3s;
   border-radius: 30px;
+  outline: 5px solid var(--color-bg	); /* Cambia el color del borde de las cards */
+  min-width: 580px;
 
 }
 .card img{
   border-radius: 30px;
   margin-right: 20px;
+  width: 250px;
+  height: auto; 
+  object-fit: cover;
 }
 .div :hover{
   background-color: #c9c8c8;
@@ -92,15 +102,8 @@ footer {
   color: var(--color-text);
 
 }
-.card{
-  outline: 3px solid var(--color-text); /* Cambia el color del borde de las cards */
-  min-width: 580px;
-}
-.card-img{ /* Son las imagenes de las cards */
-  width: 250px;
-  height: auto; 
-  object-fit: cover;
-}
+
+
 main.container {
   display: flex;
   justify-content: center;  
@@ -139,6 +142,22 @@ nav .btn:hover{
 .btn-inicio:hover{
   outline: 3px solid var(--color-text);
 }
+/* Letra Lobster */
 .letraCookie{
   font-family: 'Lobster', cursive;
+}
+/* Clase para el background de las cars y el titulo */
+.fondo-contrast{
+  background-color: var(--color-bg-opacity);
+  border-radius: 30px;
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.titulo-menu{
+  font-size: 60px;
+}
+/* Clase para poner un pequeño margen en el ultimo div */
+.row-fin{
+  margin-bottom: 20px;
 }

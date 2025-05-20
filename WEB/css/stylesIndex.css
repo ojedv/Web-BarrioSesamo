@@ -17,8 +17,6 @@ body.dark-mode { /* Definición de variables CSS para el modo oscuro */
   --color-fondo-tarjeta-opacidad: rgba(0, 27, 134, 0.8);
   --fondo-pantalla: url("../img/Fondo-MountruoAzul.png");
 
-
-
 }
 
 body {
@@ -113,4 +111,8 @@ footer {
   background-color:var(--color-fondo-tarjeta-opacidad);
   padding: 30px;
   border-radius:20px;
+}
+/* Clase para poner un pequeño margen en el ultimo div */
+.row-fin{
+  margin-bottom: 40px;
 }
