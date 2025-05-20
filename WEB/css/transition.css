@@ -1,19 +1,37 @@
-/* transition.css */
 .transition-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url("../img/Fondos/cookie.png") center center no-repeat;
-  background-size: 100px;
+  overflow: hidden;
   background-color: #fef7e0;
   z-index: 9999;
-  transform: scale(0);
-  transition: transform 0.5s ease-in-out;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .transition-screen.show {
-  transform: scale(30);
+  opacity: 1;
+}
+
+.cookie {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/Fondos/cookie.png");
+  background-size: cover;
+  animation: float 1s ease-out forwards;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-100vh) scale(1) rotate(360deg);
+  }
 }
