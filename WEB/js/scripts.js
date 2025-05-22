@@ -32,23 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleButton.addEventListener("click", () => {
     applyDarkMode(!body.classList.contains("dark-mode"));
   });
-  
-    // === TOAST COOKIES ===
-  const toast = document.getElementById("cookieToast");
-  const acceptBtn = document.getElementById("acceptCookies");
-
-  if (toast && !localStorage.getItem("cookies-accepted")) {
-    toast.classList.add("show");
-  } else if (toast) {
-    toast.classList.remove("show");
-  }
-
-  if (acceptBtn) {
-    acceptBtn.addEventListener("click", () => {
-      localStorage.setItem("cookies-accepted", "true");
-      toast.classList.remove("show");
-    });
-  }
 
 
   // === GESTIÓN DEL CARRITO ===
