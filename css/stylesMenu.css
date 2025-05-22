@@ -138,6 +138,8 @@ nav .btn:hover{
 .btn-inicio{
   color: #ffffff;
   text-decoration: none;
+
+
 }
 .btn-inicio:hover{
   outline: 3px solid var(--color-text);
