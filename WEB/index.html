@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/stylesIndex.css">
   <link rel="stylesheet" href="css/transition.css">
   <link rel="icon" href="img/Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
   <div id="transitionScreen" class="transition-screen"></div>
@@ -56,29 +58,50 @@
       <a href="menu.html" class="btn btn-warning btn-lg mt-3">Descubre el Menú</a>
     </div>
   </header>
+<!-- SECCIÓN ESTILO BLOG -->
+<section class="blog-section py-5 text-white">
+  <div class="container fondo-claro">
+    <h2 class="display-4 fw-bold text-center mb-5">🍪 Historias Dulces del Barrio</h2>
 
-  <!-- DESTACADOS -->
-  <section class="m-0 features py-5 text-center">
-    <div class="row-fin container">
-      <div class="fondo-claro row g-4">
-        <div class="col-sm-12 col-md-4">
-          <img src="img/cookies/Elmo_cookie.jpg" alt="Hecho con amor" class="feature-icon floating-img">
-          <h3>Hechas con amor</h3>
-          <p>Recetas inspiradas en la ternura de Barrio Sésamo.</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <img src="img/cookies/Oscar_cookie.jpg" alt="Personajes" class="feature-icon floating-img">
-          <h3>Personajes únicos</h3>
-          <p>¡Elmo, Coco, Oscar y más ahora en forma de galleta!</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <img src="img/cookies/CookieMonster_cookie.jpg" alt="Diversión" class="feature-icon floating-img">
-          <h3>100% diversión</h3>
-          <p>Un toque de nostalgia con sabor delicioso.</p>
-        </div>
+    <!-- ENTRADA 1 -->
+    <div class="row mb-5 align-items-center blog-entry animate__animated animate__fadeInUp">
+      <div class="col-md-5">
+        <img src="img/cookies/Elmo_cookie.jpg" class="img-fluid rounded shadow" alt="Elmo galleta">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">El día que Elmo conoció al azúcar glas</h3>
+        <p>Elmo no solo canta… ¡también cocina! Descubre cómo nació nuestra galleta más tierna y por qué es la favorita de los más peques.</p>
+        <a href="menu.html" class="btn btn-outline-warning mt-2">Leer más</a>
       </div>
     </div>
-  </section>
+
+    <!-- ENTRADA 2 -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse blog-entry animate__animated animate__fadeInUp animate__delay-1s">
+      <div class="col-md-5">
+        <img src="img/cookies/Oscar_cookie.jpg" class="img-fluid rounded shadow" alt="Oscar galleta">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">Oscar y las galletas rebeldes</h3>
+        <p>¿Quién dijo que lo crujiente no puede tener carácter? Conoce la historia de la galleta más rebelde de nuestro menú.</p>
+        <a href="menu.html" class="btn btn-outline-warning mt-2">Leer más</a>
+      </div>
+    </div>
+
+    <!-- ENTRADA 3 -->
+    <div class="row mb-5 align-items-center blog-entry animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="col-md-5">
+        <img src="img/cookies/CookieMonster_cookie.jpg" class="img-fluid rounded shadow" alt="Monstruo de las Galletas">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">El monstruo que lo empezó todo</h3>
+        <p>Sin él, no estaríamos aquí. El Monstruo de las Galletas fue nuestra inspiración, y su receta secreta es la base de toda la dulzura.</p>
+        <a href="menu.html" class="btn btn-outline-warning mt-2">Leer más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
 
   <!-- FOOTER -->
   <footer class="letraCookie fs-4 text-white text-center py-3">

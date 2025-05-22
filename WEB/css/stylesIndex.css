@@ -59,19 +59,39 @@ footer {
   margin-bottom: 15px;
 }
 
-/* Animación flotante para imágenes */
-@keyframes float {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+.blog-section {
+  min-height: 100vh;
 }
 
-.floating-img {
-  animation: float 4s ease-in-out infinite;
-  width: 230px;
-  height: 200px;
-  border-radius: 50px;
+.blog-entry img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
 }
+
+.blog-entry h3 {
+  font-family: 'Lobster', cursive;
+  color: var(--color-text);
+}
+
+.blog-entry p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.blog-entry a.btn {
+  font-weight: bold;
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.blog-entry a.btn:hover {
+  background-color: var(--color-navbar);
+  color: white;
+  border-color: var(--color-navbar);
+}
+
 
 /* Lluvia de galletas */
 .cookie-rain {
