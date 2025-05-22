@@ -1,0 +1,136 @@
+:root {
+  --accent-color: #fbbc05;
+  --highlight-color: #ff6f61;
+  --color-bg: #fdf5e3;
+  --color-text: #3f3f3f;
+  --color-navbar: #bb482e;
+  --color-footer: #bb482e;
+}
+
+body.dark-mode {
+  --accent-color: #ffc107;
+  --highlight-color: #ff8c66;
+  --color-bg: #3f3f3f;
+  --color-text: #f1f1f1;
+  --color-navbar: #1553b0;
+  --color-footer: #1553b0;
+}
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.4s, color 0.4s;
+  cursor: url("../img/cursor/cookie.png") 16 16, auto;
+}
+
+
+
+.lore-container {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.lore-section {
+  margin-bottom: 5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.lore-section.in-view:nth-child(even) {
+  transform: translateX(50px);
+  opacity: 1;
+}
+
+.lore-section.in-view:nth-child(odd) {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.lore-section h1,
+.lore-section h2 {
+  font-weight: bold;
+  color: var(--highlight-color);
+  margin-bottom: 1rem;
+}
+
+.lore-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.lore-image {
+  max-width: 250px;
+  margin: 2rem auto;
+  display: block;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
+}
+
+.lore-section.in-view .lore-image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* .offcanvas es el Menu desplegable del nav */
+
+.offcanvas-body{
+  font-size: 25px;
+}
+.offcanvas-body li :hover{
+  background-color:#c9c8c8;
+}
+.offcanvas-title{
+  font-size: 30px;
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: #fff;
+}
+footer {
+  background-color: var(--color-footer);
+  color: #fff;
+  position: fixed;
+  transition: background-color 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Hacemos titulo mas grande y cambiamos el estilo de la letra */
+.titulo-tienda{
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
+/* Cambia la letra */
+.letraCookie{
+  font-family: 'Lobster', cursive;
+}
+.fondonav{
+  background-color: var(--color-navbar);
+}
+
+/* Boton de abajo derecha de todas las paginas menos inicio, que te lleva al inicio */
+.btn-inicio{
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 90px;
+  margin-right: 30px;
+  color: var(--color-text);
+}
+.btn-inicio:hover{
+  outline: 3px solid var(--color-text);
+}

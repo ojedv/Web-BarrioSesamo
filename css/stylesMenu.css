@@ -1,0 +1,163 @@
+:root {
+  --color-bg: #ebebeb;
+  --color-bg-opacity: rgba(243, 239, 239, 0.8);/* Color usado para el fondo de las cards y el titulo */
+  --color-text: #000000;
+  --color-navbar: #bb482e;
+  --color-footer: #bb482e;
+  --color-footer-opacity: rgba(187, 72, 46, 0.6); 
+  --color-borde-boton: #000000;
+  --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
+    --fondo-galletas: url("../img/fondo_rojo.png") ;
+
+}
+
+body.dark-mode {
+  --color-bg: #000000;
+  --color-bg-opacity: rgba(0, 0, 0, 0.6);/* Color usado para el fondo de las cards y el titulo */
+  --color-text: #f1f1f1;
+  --color-navbar: #1553b0;
+  --color-footer: #1553b0;
+  --color-footer-opacity: rgba(21, 83, 176, 0.6);
+  --color-borde-boton: #ffffff;
+  --fondo-galletas: url("../img/fondo_azul.png");
+
+
+ 
+
+}
+
+body {
+  background:var(--fondo-galletas) no-repeat fixed;
+  color: var(--color-text);
+  padding-top: 70px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: url("../img/cursor/cookie.png") 16 16, auto;
+}
+
+.navbar {
+  background-color: var(--color-navbar) !important;
+  border-bottom: 5px solid var(--color-bg);
+
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid var(--color-bg);
+}
+
+.card {
+  background-color: var(--color-bg-opacity);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 30px;
+  outline: 5px solid var(--color-bg	); /* Cambia el color del borde de las cards */
+  min-width: 580px;
+
+}
+.card img{
+  border-radius: 30px;
+  margin-right: 20px;
+  width: 250px;
+  height: auto; 
+  object-fit: cover;
+}
+.div :hover{
+  background-color: #c9c8c8;
+}
+
+.offcanvas {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-content {
+  transition: background-color 0.3s, color 0.3s;
+}
+.offcanvas-body{
+  font-size: 25px;
+}
+.offcanvas-body li :hover{
+  background-color:#c9c8c8;
+}
+.offcanvas-title{
+  font-size: 30px;
+}
+.btn-warning{
+  background-color: var(--color-footer);
+  color:var(--color-);
+  margin-bottom: 80px;
+  margin-right: 30px;
+}
+.btn{ /* Cambia el color del borde del boton de inicio */
+  outline: 0px solid var(--color-text);
+  border: 3px solid var(--color-text);
+  color: var(--color-text);
+}
+.btn:hover{ /* Cambia el color del boton +infos */
+  background-color: var(--color-footer);
+  color: var(--color-text);
+
+}
+
+
+main.container {
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+}
+.card .btn{ /* Cambia borde de los botones dentro de las tarjetas */
+  border-radius: 30px;
+  outline: 0px solid var(--color-text);
+  border: 3px solid var(--color-text);
+}
+
+.btn-compra:hover{ /* Cambia el color del borde del boton de compra */
+  outline: 3px solid var(--color-borde-boton);
+  border: 3px solid var(--color-borde-boton);
+}
+.row{ /*Pone un pequeño margen abajo del todo*/
+  margin-bottom: 30px;
+}
+.titulo-tienda{ /* Cambia el color del texto al titulo de la tienda */
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
+nav .btn{
+  color: var(--color-text);
+  border: 3px solid #ffffff;
+  background-color:var(--color-footer);
+}
+
+nav .btn:hover{
+  background-color:var(--color-blanco-opacidad);
+}
+.btn-inicio{
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-inicio:hover{
+  outline: 3px solid var(--color-text);
+}
+/* Letra Lobster */
+.letraCookie{
+  font-family: 'Lobster', cursive;
+}
+/* Clase para el background de las cars y el titulo */
+.fondo-contrast{
+  background-color: var(--color-bg-opacity);
+  border-radius: 30px;
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.titulo-menu{
+  font-size: 60px;
+}
+/* Clase para poner un pequeño margen en el ultimo div */
+.row-fin{
+  margin-bottom: 20px;
+}

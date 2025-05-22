@@ -1,0 +1,144 @@
+:root {  /* Definición de variables CSS para el modo claro */
+  --color-bg: #fdf5e3;
+  --color-text: #3f3f3f;
+  --color-navbar: #bb482e;
+  --color-footer: #bb482e;
+  --color-blanco-opacidad: rgba(255, 255, 255, 0.6);
+  --color-fondo-tarjeta-opacidad: rgba(255, 255, 255, 0.8);
+  --fondo-pantalla: url("../img/Fondo-MountruoRojo.png");
+
+}
+
+body.dark-mode { /* Definición de variables CSS para el modo oscuro */
+  --color-bg: #3f3f3f;
+  --color-text: #f1f1f1;
+  --color-navbar: #1553b0;
+  --color-footer: #1553b0;
+  --color-fondo-tarjeta-opacidad: rgba(0, 27, 134, 0.8);
+  --fondo-pantalla: url("../img/Fondo-MountruoAzul.png");
+
+}
+
+body {
+  background: var(--fondo-pantalla) no-repeat center center fixed;
+  color: var(--color-text);
+  padding-top: 70px;
+  margin-top: 80px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: url("../img/cursor/cookie.png") 16 16, auto; /* Cambia el cursor a una imagen personalizada */
+}
+/* Ajusta color */
+.color-text{
+  color: var(--color-text);
+}
+
+.navbar {
+  background-color: var(--color-navbar) !important;
+}
+.titulo-tienda{
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
+/* Letra Cookie */
+.letraCookie{
+  font-family: 'Lobster', cursive;
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero-section {
+  
+  background-size: cover;
+}
+
+.feature-icon {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.blog-section {
+  min-height: 100vh;
+}
+
+.blog-entry img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+}
+
+.blog-entry h3 {
+  font-family: 'Lobster', cursive;
+  color: var(--color-text);
+}
+
+.blog-entry p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.blog-entry a.btn {
+  font-weight: bold;
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.blog-entry a.btn:hover {
+  background-color: var(--color-navbar);
+  color: white;
+  border-color: var(--color-navbar);
+}
+
+
+/* Lluvia de galletas */
+.cookie-rain {
+  position: fixed;
+  top: -100px;
+  width: 40px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+/* .offcanvas es el Menu desplegable del nav */
+
+.offcanvas-body{
+  font-size: 25px;
+}
+.offcanvas-body li :hover{
+  background-color:#c9c8c8;
+}
+.offcanvas-title{
+  font-size: 30px;
+}
+
+/*Clase para el fondo de los divs para diferenciar del fondo*/
+.fondo-claro{
+  background-color:var(--color-fondo-tarjeta-opacidad);
+  padding: 30px;
+  border-radius:20px;
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.4);
+  }
+/* Clase para poner un pequeño margen en el ultimo div */
+.row-fin{
+  margin-bottom: 40px;
+}

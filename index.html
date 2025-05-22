@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sésamo Cookies - Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesIndex.css">
+  <link rel="stylesheet" href="css/transition.css">
+  <link rel="icon" href="img/Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+  <div id="transitionScreen" class="transition-screen"></div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="titulo-tienda navbar-brand d-flex align-items-center" href="#">
+        <img src="img/Logo.png" alt="Logo" width="60" height="60" class="me-3">
+        Sésamo Cookies
+      </a>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas" aria-controls="menuCanvas">☰</button>
+        <button id="cartButton" class="btn btn-outline-light me-2" title="Ver carrito">
+          🛒 <span id="cartCount" class="badge bg-warning text-dark ms-1">0</span>
+        </button>
+        <button id="darkModeToggle" class="btn btn-outline-light" title="Cambiar modo">
+          <span id="darkModeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OFFCANVAS MENU -->
+  <div class="offcanvas offcanvas-end bg-light text-dark" tabindex="-1" id="menuCanvas" aria-labelledby="menuCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuCanvasLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./html/menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="./html/lore.html">Lore</a></li>
+        <li class="nav-item"><a class="nav-link" href="./html/carritoCompra.html">Carrito Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="m-0 hero-section d-flex align-items-center">
+    <div class=" container text-center fondo-claro">
+      <h1 class="display-5 fw-semibold">¡Bienvenido al mundo de las galletas más divertidas!</h1>
+      <p class="lead">Cada galleta es un personaje, cada bocado una historia.</p>
+      <a href="./html/menu.html" class="btn btn-warning btn-lg mt-3">Descubre el Menú</a>
+    </div>
+  </header>
+<!-- SECCIÓN ESTILO BLOG -->
+<section class="blog-section py-5 text-white">
+  <div class="row-fin container fondo-claro">
+    <h2 class="color-text display-4 fw-bold text-center mb-5">🍪 Historias Dulces del Barrio</h2>
+
+    <!-- ENTRADA 1 -->
+    <div class="row mb-5 align-items-center blog-entry animate__animated animate__fadeInUp">
+      <div class="col-md-5">
+        <img src="img/cookies/Elmo_cookie.jpg" class="img-fluid rounded shadow" alt="Elmo galleta">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">El día que Elmo conoció al azúcar glas</h3>
+        <p>Elmo no solo canta… ¡también cocina! Descubre cómo nació nuestra galleta más tierna y por qué es la favorita de los más peques.</p>
+        <a href="./html/menu.html" class="btn btn-outline-warning mt-2">Leer más</a>
+      </div>
+    </div>
+
+    <!-- ENTRADA 2 -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse blog-entry animate__animated animate__fadeInUp animate__delay-1s">
+      <div class="col-md-5">
+        <img src="img/cookies/Oscar_cookie.jpg" class="img-fluid rounded shadow" alt="Oscar galleta">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">Oscar y las galletas rebeldes</h3>
+        <p>¿Quién dijo que lo crujiente no puede tener carácter? Conoce la historia de la galleta más rebelde de nuestro menú.</p>
+        <a href="./html/menu.html" class="btn btn-outline-warning mt-2">Leer más</a>
+      </div>
+    </div>
+
+    <!-- ENTRADA 3 -->
+    <div class="row mb-5 align-items-center blog-entry animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="col-md-5">
+        <img src="img/cookies/CookieMonster_cookie.jpg" class="img-fluid rounded shadow" alt="Monstruo de las Galletas">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">El monstruo que lo empezó todo</h3>
+        <p>Sin él, no estaríamos aquí. El Monstruo de las Galletas fue nuestra inspiración, y su receta secreta es la base de toda la dulzura.</p>
+        <a href="./html/menu.html" class="btn btn-outline-warning mt-2">Leer más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- FOOTER -->
+  <footer class="letraCookie fs-4 text-white text-center py-3">
+    <p class="mb-0">© 2025 Sesame Cookies | Hecho con 🍪 y alegría</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/cookieRain.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>
