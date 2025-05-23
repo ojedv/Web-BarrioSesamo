@@ -28,6 +28,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   cursor: url("../img/cursor/cookie.png") 16 16, auto; /* Cambia el cursor a una imagen personalizada */
 }
+
 /* Ajusta color */
 .color-text{
   color: var(--color-text);
@@ -45,6 +46,7 @@ body {
   font-family: 'Lobster', cursive;
 }
 
+
 footer {
   background-color: var(--color-footer);
   color: #fff;
@@ -55,9 +57,15 @@ footer {
 }
 
 .hero-section {
-  
+  padding-top: 250px; /* espacio desde arriba para mostrar bien la imagen */
+  padding-bottom: 0px; /* reducido para que el siguiente bloque quede más cerca */
+  min-height: 100vh;
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
 }
+
 
 .feature-icon {
   width: 60px;
@@ -65,7 +73,8 @@ footer {
 }
 
 .blog-section {
-  min-height: 100vh;
+  padding-top: 0; /* elimina espacio superior innecesario */
+  margin-top: 0;
 }
 
 .blog-entry img {
@@ -136,7 +145,7 @@ footer {
   background-color:var(--color-fondo-tarjeta-opacidad);
   padding: 30px;
   border-radius:20px;
-  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.144);
   }
 /* Clase para poner un pequeño margen en el ultimo div */
 .row-fin{

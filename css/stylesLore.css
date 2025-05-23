@@ -115,10 +115,12 @@ footer {
   font-family: 'Lobster', cursive;
   font-size: 35px;
 }
+
 /* Cambia la letra */
 .letraCookie{
   font-family: 'Lobster', cursive;
 }
+
 .fondonav{
   background-color: var(--color-navbar);
 }
