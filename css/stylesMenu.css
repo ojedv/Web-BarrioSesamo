@@ -1,6 +1,6 @@
 :root {
   --color-bg: #ebebeb;
-  --color-bg-opacity: rgba(243, 239, 239, 0.8);/* Color usado para el fondo de las cards y el titulo */
+  --color-bg-opacity: rgba(243, 239, 239, 0.9);/* Color usado para el fondo de las cards y el titulo */
   --color-text: #000000;
   --color-navbar: #bb482e;
   --color-footer: #bb482e;
@@ -56,7 +56,7 @@ footer {
   transition: background-color 0.3s, color 0.3s;
   border-radius: 30px;
   outline: 5px solid var(--color-bg	); /* Cambia el color del borde de las cards */
-  min-width: 580px;
+  min-height: 285px; /* No tocar ajusta el tamaño de las cards*/
 
 }
 .card img{
