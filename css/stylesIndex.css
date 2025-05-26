@@ -20,7 +20,7 @@ body.dark-mode { /* Definición de variables CSS para el modo oscuro */
 }
 
 body {
-  background: var(--fondo-pantalla) no-repeat center center fixed;
+  background: var(--fondo-pantalla) center center fixed;
   color: var(--color-text);
   padding-top: 70px;
   font-family: 'Segoe UI', sans-serif;
